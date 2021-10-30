@@ -1,0 +1,13 @@
+Day-3 
+************************************************************************************************
+
+DataBase Details 
+    ****************
+
+    database name : ecommerce-7pm
+
+    collection name : products
+
+    connection url : mongodb+srv://satyamkota:<password>@employee-portal.q9apr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+    connection url : mongodb+srv://satyamkota:satyam2715@employee-portal.q9apr.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority
