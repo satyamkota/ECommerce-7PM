@@ -1,7 +1,103 @@
-Day-3 
-************************************************************************************************
 
-DataBase Details 
+Day-1
+*****
+    Domain : ECommerce
+
+    Highlights : 
+
+            MERN Stack Development
+
+            M - MongoDB
+
+            E - ExpressJS
+
+            R - ReactJS
+
+            N - NodeJS
+
+
+            Cart Implementation  => Add / Update / Delete / Calculate the Price    
+
+            Stripe Payment Gateways Integration / GPay Integration / Paypal Integration
+
+            Social Networks Integrations / Facebook Integration / Twitter Integration / Gmail Integration
+
+            Middlewares
+
+                Redux
+
+                Thunk
+
+                Saga
+
+            AWS Deployment
+
+            Amazon Web Services
+
+            CI / CD Process
+
+            Continuos Intregration & Continuos Deployment
+
+            Design => Material UI / BootStrap / CSS3 -- flex, grid , RWD (Media Queries)
+
+            Forms -- Signin Form & Registration Form with Validations
+
+                    (formik & yup)
+
+            Registration -- upload the images (s3 bucket / AWS)
+
+            Gulp - Automation Tool
+
+            WebPack
+
+            Authentication & Authorization
+
+            OAuth2 / PassportJS / JWT Integration
+
+            Role Based Authentication
+
+
+
+Day-2
+*****
+
+Home Screen Design
+
+
+=> create the AWS Account
+
+    link : https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Ffromtb%3Dtrue%26hashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-1_54e71a4c1f85d6a5&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=zFx36UrE2YqM-4xkLY-E5bmkU1l5GJTS4DE_us4sK14&code_challenge_method=SHA-256
+
+
+
+
+=> upload images to the s3 bucket
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p1.jpg
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p2.jpg
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p3.jpg
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p4.jpg
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p5.jpg
+
+        https://ecommerce-7pm.s3.us-east-2.amazonaws.com/p6.jpg
+
+
+=> create "mongodb atlas" account
+
+    Link : https://account.mongodb.com/account/register
+
+
+Day-3
+*****
+
+
+=> store the above images path to "mongodb" atlas database
+
+    DataBase Details 
     ****************
 
     database name : ecommerce-7pm
@@ -10,4 +106,345 @@ DataBase Details
 
     connection url : mongodb+srv://satyamkota:<password>@employee-portal.q9apr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
-    connection url : mongodb+srv://satyamkota:satyam2715@employee-portal.q9apr.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority
+    connection url (sir) : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority
+
+    connection url (My url) : mongodb+srv://satyamkota:satyamkota@employee-portal.q9apr.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority
+
+
+
+=> create backend directory
+
+=> switch to backend directory
+
+    > cd backend
+
+=> download node modules
+
+    - express
+        - used to develop the rest services
+        Ex.
+            GET
+
+            POST
+
+            PUT
+
+            DELETE
+
+    - cors
+        - used to enable the ports communication
+
+    - mongoose
+        - used to connect to mongodb database
+
+    > yarn add express cors mongoose
+
+=> create the model
+
+        finally "products" model is ready
+
+
+
+Day - 4
+*******
+
+DataBase Name : ecommerce-7pm
+
+collection Name : products
+
+connection url : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority
+
+
+create the folder
+
+Ex.
+    backend
+
+switch to the folder
+
+    > cd backend
+
+
+download the node modules
+
+    => express
+
+    => mongoose
+
+    => cors
+
+    > npm i express mongoose cors
+
+               or
+
+    > yarn add express mongoose cors
+
+create the model
+
+*************************************
+backend
+      model
+        product.js
+*************************************
+
+    finally "Product" model is ready.
+
+
+create the rest api
+
+*********************************************
+backend
+      server.js
+*********************************************
+
+start the server
+
+    > node server
+
+test the rest api by using Postman
+
+    > http://localhost:8080/api/products
+
+
+
+Day - 5
+*******
+
+start node server
+
+
+test the rest api by using Postman
+
+ => http://localhost:8080/api/products
+
+
+create the react application
+
+    > npx create-react-app frontend
+
+switch to react application
+
+    > cd frontend
+
+download libraries
+
+    > axios
+        used to make the rest api calls
+
+    > redux
+        used to implement the state management
+
+    > redux-thunk
+        used to moniter the actions
+
+
+    > yarn add axios redux redux-thunk
+            (or)
+    > npm i axios redux redux-thunk react-redux
+
+
+implement the redux architecture
+++++++++++++++++++++++++++++++++
+
+
+1) Types
+
+    - identifying application requirement
+
+    Ex.
+        1) HIT_SERVER
+
+        2) CATCH_POSITIVE_RESPONSE
+
+        3) CATCH_NEGATIVE_RESPONSE
+
+
+2) Actions
+
+    - Implementation of Types called as Actions
+
+
+3) Reducer
+
+    - Reducer Receiving the Result from Actions.
+
+4) Store
+
+    - Store Receiving the Result from Reducer.
+
+
+5) Component
+
+    - Component Performs the Dispatch and Subscription.
+
+    - Sending the Request we can call Dispatch.
+
+    - Receiving the Result we can call Subscription.
+
+
+Day-6
+*****
+create the Types
+
+*********************************
+frontend
+       src
+         constants
+            ProductsConstants.js
+*********************************
+
+
+create the Actions
+
+***********************************
+frontend
+       src
+         actions
+            ProductsActions.js
+**********************************
+
+        finally "listProducts" is ready
+
+
+create the reducer
+
+**************************************
+frontend
+       src
+         reducer
+            ProductsReducer.js
+*************************************
+
+    finally "ProductsReducer" is ready
+
+
+
+Day-7
+*****
+
+create the Types
+
+*******************************************
+frontend
+       src
+          constants
+             ProductsConstant.js
+*******************************************
+
+    finally 3 types are ready
+
+    1) LIST_PRODUCTS
+
+    2) LIST_PRODUCTS_SUCCESS
+
+    3) LIST_PRODUCTS_FAIL
+
+
+create the actions
+
+*********************************************
+frontend
+      src
+        actions
+           ProductsActions.js
+********************************************
+
+    - finally "ProductsActions" is ready
+
+
+create the reducer
+
+*******************************************
+frontend
+       src
+          reducer
+              ProductsReducer.js
+******************************************
+
+    - finally "ProductsReducer" is Ready
+
+
+create the "store", 
+           deploy the "reducer", 
+           apply the "thunk" middleware 
+           and make the "store" availability to "Home" Component
+
+
+index.js
+
+
+
+create the Home Component
+
+
+******************************************
+frontend
+       src
+         screens
+            HomeScreen.js
+******************************************
+
+
+Day-8
+*****
+
+=> display the "spinner"
+
+        - font-awasome / bootstrap / jquery / material-ui
+
+
+=> display the error popup
+
+=> design the frontend
+
+        CSS3 Flex Box / CSS3 Grid Box 
+
+
+=> deployment
+
+    heroku
+
+
+
+Day-9
+*****
+
+create the spinner
+
+****************************************
+frontend
+       src   
+         components
+              LoadingBox.js
+****************************************
+
+
+create the MessageBox
+
+****************************************
+frontend
+       src
+         components
+             MessageBox.js      props --- variant  && children
+***************************************
+
+
+create the Rating
+
+******************************************
+frontend
+       src
+         components
+              Rating.js
+*****************************************
+
+
+Day-10
+******
+implement the App Component
+
+App.js
+
+implement the spa
+
+    => make the HomeScreen as Default Component
