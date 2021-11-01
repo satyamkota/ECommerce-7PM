@@ -1,7 +1,7 @@
 import axios from "axios";
 import { LIST_PRODUCTS,
          LIST_PRODUCTS_SUCCESS,
-         LIST_PRODUCTS_FAIL } from "../constants/ProductsConstant";
+         LIST_PRODUCTS_FAIL } from "../constants/ProductsConstants";
 export const ProductsActions = ()=>{
     return async (dispatch)=>{
         dispatch({

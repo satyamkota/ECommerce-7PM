@@ -1,4 +1,5 @@
-import { LIST_PRODUCTS, LIST_PRODUCTS_FAIL, LIST_PRODUCTS_SUCCESS } from "../constants/ProductsConstant";
+// import { LIST_PRODUCTS, LIST_PRODUCTS_FAIL, LIST_PRODUCTS_SUCCESS } from "../constants/ProductsConstant";
+import { LIST_PRODUCTS, LIST_PRODUCTS_SUCCESS, LIST_PRODUCTS_FAIL } from "../constants/ProductsConstants"
 
 const initialState = {
     loading:false,
