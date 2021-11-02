@@ -1,3 +1,5 @@
+
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,7 +18,6 @@ code {
   display: block !important;
 }
 
-/* Alert */
 
 .alert{
   padding: 1rem;
@@ -37,7 +38,7 @@ code {
   background-color: #eeffe0;
 }
 
-/* Rating */
+
 
 .rating span{
   color: #f0c040;
@@ -46,4 +47,128 @@ code {
 
 .rating span:last-child{
   color: #404040;
+}
+
+
+
+*/
+
+
+
+html{
+  font-size: 62.5%;    
+  box-sizing: border-box;
+}
+body{
+   margin: 0px;
+   font-size: 1.6rem;
+   height: 100vh;
+   font-family:  Helvetica,Arial,sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+#root{
+ height: 100%;
+}
+
+.grid-container{
+ display: grid;
+ grid-template-areas: 
+   "member1"
+   "member2"
+   "member3";
+ grid-template-columns: 1fr;
+ grid-template-rows: 5rem 1fr 5rem;
+ height: 100%;
+}
+
+header{
+ grid-area: "member1";
+ background-color: #203040;
+} 
+
+main{
+ grid-area: "member2";
+ padding: 1rem;
+}
+
+footer{
+ grid-area: "member3";
+ background-color: #203040;
+ color: #ffffff;
+}
+
+.row{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.brand{
+ font-size: 3rem;
+ color: #ffffff;
+ font-weight: bold;
+}
+
+.row.center{
+ justify-content: center;
+}
+
+.card{
+ border: 0.1rem solid #c0c0c0;
+ background-color: #f8f8f8;
+ margin: 1rem;
+ border-radius: 0.5rem;
+}
+
+.card-body{
+ padding: 1rem;
+}
+
+.card-body>*{
+ margin-bottom: 0.5rem;
+}
+
+.rating span{
+ color: #f0c040;
+ margin: 0.1rem;
+}
+
+.rating span:last-child{
+ color: #404040;
+}
+
+.alert{
+ padding: 1rem;
+ border: 1px solid transparent;
+ border-radius: 0.5rem;
+}
+
+.alert-info {
+ color: #2020a0;
+ background-color: #e0e0ff;
+}
+.alert-danger {
+ color: #a02020;
+ background-color: #ffe0e0;
+}
+.alert-success {
+ color: #20a020;
+ background-color: #eeffe0;
+}
+
+.price{
+ font-size: 2rem;
+}
+
+a{
+ text-decoration: none;
+ margin-right: 20px;
+ color: white;
+ padding: 5px;
+}
+
+a:hover{
+ color: #f0c040;
 }

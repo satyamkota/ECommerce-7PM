@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function MessageBox(props) {
-    return (
+function MessageBox(props){
+    return(
         <React.Fragment>
             <div className={`alert alert-${props.variant} | 'info'`}>
                 {props.children}
