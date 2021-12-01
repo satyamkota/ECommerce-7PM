@@ -448,3 +448,257 @@ App.js
 implement the spa
 
     => make the HomeScreen as Default Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Module2 Implementation
+**********************
+Day-13
+******
+
+=> create the rest api
+
+    server.js
+
+=> test the rest api by using Postman
+
+        => http://localhost:8080/api/products/id
+
+
+> yarn add mongoose@5.12.13
+
+
+Day-14
+******
+
+Test the rest api calls by using Postman
+
+=> http://localhost:8080/api/products
+
+=> http://localhost:8080/api/products/{id}
+
+
+implement the redux architecture
+********************************
+
+*********************************************
+frontend
+       src
+         constants
+             DetailsConstant.js
+                finally "DETAILS_LOADING" , "DETAILS_LOADING_SUCCESS" and "DETATILS_LOADING_FAIL" constants are ready
+         actions
+            DetailsAction.js
+                finally "DetailsActions" is ready
+         reducer
+            DetailsReducer.js
+                finally "DetailsReducer" is ready
+         index.js
+                finally we have "details" is the key surrounder with reducer
+
+         screens
+            DetailsScreen.js
+***********************************************
+
+
+Forms
+*****
+    - in reactjs, we can implement forms eazily with the help of 3rd party libraries.
+
+    1) formik
+
+    2) yup
+
+
+create the react applications
+*****************************
+
+> npx create-react-app forms-ex
+
+
+switch to the react application
+*******************************
+
+> cd forms-ex
+
+
+download the libraries
+**********************
+
+> yarn add formik yup bootstrap
+
+
+
+include bootstrap framework
+***************************
+index.js
+
+
+create the reusable component
+*****************************
+
+forms-ex
+       src  
+         components
+             TextField.js
+
+
+finally we are able to component reusable component called as 
+
+"TextField"
+
+
+
+use the TextField component
+***************************
+Signup.js
+
+
+Design the Final Form Component
+*******************************
+
+Registration.js
+
+
+
+
+***************************************************
+1) CartScreen
+
+2) Registration 
+
+3) Login
+
+4) Payment
+
+5) Deployment
+***************************************************
+
+CartScreen
+**********
+1) Navigate From module2 to module3
+
+    "DetailScreen" to "CartScreen" while moving we need to carry "id" and "qty"
+
+    finally CartScreen contain "id" and "qty"
+
+
+2) implement the state management
+
+    => constants
+        finally "ADD_ITEM" constant is ready
+
+    => actions
+        finally "addToCart" action is ready
+    => reducer
+        finally "CartReducer" is ready
+
+    => store
+
+    => dispatch & subscription in CartScreen component
+
+
+
+3) implement the cart item remove functionality
+
+    => constants
+        finally "REMOVE_ITEM" constant is ready
+
+    => actions
+        finally "removeItemCart" action is ready
+
+    => reducer
+        
+
+    => store
+
+    => dispatch & subscription in CartScreen Component
+
+
+
+Registration
+************
+
+***************************************************
+constants
+        RegisterConstants.js
+
+actions
+        RegisterActions.js
+
+reducer
+        RegisterReducer.js
+
+screens
+        RegisterScreen.js
+
+App.js
+**************************************************
+
+RegisterScreen
+++++++++++++++
+
+=> first name
+
+=> last name
+
+=> email
+
+=> mobile number
+
+=> gender   (radio buttons)
+
+=> languages  (check boxes)
+
+=> country     (dropdown)
+
+=> date of birth   (date-picker)
+
+=> time            (time-picker)
+
+=> salary           (range field)
+
+=> address    
+
+=> image upload
+
+=> capcha
+
+
+formik & yup library
+
+multi-step form
+
+context-api
+
+image upload to "aws server" through "nodejs"
+
+generate the tokens to maintain "token based Authentication System"
+
+"jwt-simple" module
+
+download following libraries
+
+> formik
+
+> yup
+
+
+> yarn add formik yup
+
+    these libraries are used to implement the forms in eazy manner
