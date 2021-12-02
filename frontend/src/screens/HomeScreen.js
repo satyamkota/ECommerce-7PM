@@ -26,6 +26,7 @@ import Products from "../components/Products";
 function HomeScreen(){
     const result = useSelector(state=>state.products);
     const {loading,products,error} = result;
+    // console.log(result);
     const dispatch = useDispatch();
     useEffect(()=>{
         dispatch(ProductsActions());

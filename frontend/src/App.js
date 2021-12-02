@@ -3,6 +3,8 @@ import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+// import DetailsScreen from './actions/DetailsAction';
+import DetailsScreen from './screens/DetailsScreen'
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
           <div className="grid-container">
               <header className="row">
                 <div>
-                  <NavLink to="/" className="brand" exact={true} strict><a>AshokIT</a></NavLink>
+                  <NavLink to="/" className="brand" exact={true} strict>AshokIT</NavLink>
                 </div>
 
                 <div>
@@ -23,6 +25,8 @@ function App() {
 
               <main>
                   <Route path="/" component={HomeScreen} exact={true} strict></Route>
+                  <Route path="/details/:id" component={DetailsScreen} exact={true} strict></Route>
+
               </main>
 
               <footer className="row center">
