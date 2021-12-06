@@ -36,7 +36,7 @@ const Product = require("./model/product");
 
 
 //connect to mongodb database
-mongoose.connect(`mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority`,{
+mongoose.connect(`mongodb+srv://satyamkota:satyamkota@employee-portal.q9apr.mongodb.net/ecommerce-7pm?retryWrites=true&w=majority`,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true
