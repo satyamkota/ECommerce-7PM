@@ -398,3 +398,21 @@ textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
+
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+
+img.small {
+  max-width: 5rem;
+  width: 100%;
+}
+
+.min-30 {
+  min-width: 30rem;
+}

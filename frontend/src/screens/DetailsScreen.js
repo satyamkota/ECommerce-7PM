@@ -21,7 +21,7 @@ function DetailsScreen(props){
     },[]);
 
     const addToCartHandler = ()=>{
-       props.history.push(`/cart/${id}?qty=${qty}`);
+       props.history.push(`/cart/${id}?qty=${qty}`); 
     }
 
 
@@ -44,12 +44,60 @@ function DetailsScreen(props){
                                 <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
                             </li>
                             <li>
-                                Price: ${product.cost}
+                                Price: ₹{product.cost}
                             </li>
                             <li>
                                 {product.description}
                             </li>
                         </ul>
+                    </div>
+                    <div className="col-1">
+                        <div className="card card-body">
+                            <ul>
+                                <li>
+                                    <div className="row">
+                                        <div>Name</div>
+                                        <div>{product.name}</div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="row">
+                                        <div>Price</div>
+                                        <div className="price">₹ {product.cost}</div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="row">
+                                        <div>Status</div>
+                                        <div>{product.countInStock>0?(<div className="success">In Stock</div>):(<div className="danger">Out Of Stock</div>)}</div>
+                                    </div>
+                                </li>
+                                {product.countInStock>0 && (<>
+                                    <li>
+                                        <div className="row">
+                                            <div>Qty</div>
+                                            <select value={qty}
+                                                    onChange={(e)=>{ setQty(e.target.value) }}>
+                                                {[...Array(product.countInStock).keys()].map(
+                                                      (x) => (
+                                                    <option key={x + 1} value={x + 1}>
+                                                        {x + 1}
+                                                     </option>
+                                                )
+                                            )}
+
+                                            </select>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <button className="primary block" onClick={addToCartHandler}>Add To Cart</button>
+                                    </li>
+                                </>)}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>)}
